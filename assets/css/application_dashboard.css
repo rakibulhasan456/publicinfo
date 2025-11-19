@@ -1,0 +1,220 @@
+.application-portal {
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --card-border-radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+/* ✅ Keep your existing page background — no override */
+
+.application-portal .container {
+  background: transparent;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+
+.application-portal .section-title {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #6c757d;
+  display: inline-block;
+}
+
+/* ✅ Center cards properly and keep consistent gap */
+
+.application-portal .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* ✅ All cards same width & height */
+
+.application-portal .custom-card {
+  background: white;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) ease;
+  width: 350px;
+  /*min-height: 460px;*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e9ecef;
+  max-height: 450px;
+}
+
+.application-portal .custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* Card Top Icon */
+
+.application-portal .card-icon {
+  padding: 25px 20px 15px;
+  text-align: center;
+  background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.application-portal .card-icon svg {
+  width: 70px;
+  height: 70px;
+  fill: white;
+}
+
+/* Card Body */
+
+.application-portal .card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Title */
+
+.application-portal .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Buttons inside card */
+
+.application-portal .button-container {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: top 0.3s ease;
+}
+
+.application-portal .card-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition-speed) ease;
+  width: 100%;
+}
+
+.application-portal .card-button:hover {
+  background-color: #495057;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Section-specific colors */
+
+.application-portal .report-section .card-icon {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.application-portal .report-section .card-button {
+  background-color: #dc3545;
+}
+
+.application-portal .report-section .card-button:hover {
+  background-color: #c82333;
+}
+
+.application-portal .appeal-section .card-icon {
+  background: linear-gradient(135deg, #fd7e14, #e55a00);
+}
+
+.application-portal .appeal-section .card-button {
+  background-color: #fd7e14;
+}
+
+.application-portal .appeal-section .card-button:hover {
+  background-color: #e55a00;
+}
+
+.application-portal .gang-section .card-icon {
+  background: linear-gradient(135deg, #6f42c1, #59359a);
+}
+
+.application-portal .gang-section .card-button {
+  background-color: #6f42c1;
+}
+
+.application-portal .gang-section .card-button:hover {
+  background-color: #59359a;
+}
+
+.application-portal .whitelisted-section .card-icon {
+  background: linear-gradient(135deg, #20c997, #199d7a);
+}
+
+.application-portal .whitelisted-section .card-button {
+  background-color: #20c997;
+}
+
+.application-portal .whitelisted-section .card-button:hover {
+  background-color: #199d7a;
+}
+
+.application-portal .state-section .card-icon {
+  background: linear-gradient(135deg, #0dcaf0, #0ba5c7);
+}
+
+.application-portal .state-section .card-button {
+  background-color: #0dcaf0;
+}
+
+.application-portal .state-section .card-button:hover {
+  background-color: #0ba5c7;
+}
+
+.application-portal .community-section .card-icon {
+  background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.application-portal .community-section .card-button {
+  background-color: #6c757d;
+}
+
+.application-portal .community-section .card-button:hover {
+  background-color: #495057;
+}
+
+/* ✅ Responsive fixes */
+
+@media (max-width: 1200px) {
+  .application-portal .card-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .application-portal .custom-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.card-container {
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+#application_bottom_section {
+  padding-bottom: 50px;
+}
+

@@ -1,0 +1,71 @@
+.business-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  margin-bottom: 40px;
+  min-width: 800px;
+}
+
+/* ⬅️ Wrapper for Horizontal Scroll and Responsive Padding ➡️ */
+
+.table-wrapper {
+  overflow-x: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+
+@media (max-width: 1200px) {
+  .table-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.business-table th, .business-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.business-table th {
+  background-color: #1A1D20!important;
+  font-weight: 500;
+  font-size: 18px!important;
+  color: #ff8a00;
+}
+
+.business-table td {
+  font-size: 16px!important;
+  color: #FFFFFF;
+}
+
+.business-table tr:nth-child(even) {
+  background-color: #1A1D20;
+}
+
+.business-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.business-table a:hover {
+  text-decoration: underline;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  /*padding-left: 50px;*/
+  /*padding-right: 50px;*/
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* For Webkit Browsers (Chrome, Safari, newer Edge, Opera) */
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+

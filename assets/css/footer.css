@@ -1,0 +1,105 @@
+/* Footer Styles */
+
+.site-footer {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 25px 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Title */
+
+.footer-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Social Links */
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-link i {
+  font-size: 18px;
+}
+
+/* Hover Effects */
+
+.social-link.discord:hover {
+  background: #7289da;
+  transform: scale(1.05);
+}
+
+.social-link.facebook:hover {
+  background: #1877f2;
+  transform: scale(1.05);
+}
+
+.social-link.youtube:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
+
+/* Copyright */
+
+.footer-copy {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 6px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .footer-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-link i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-copy {
+    font-size: 11px;
+  }
+}
+

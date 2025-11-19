@@ -1,0 +1,113 @@
+body {
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px!important;
+  margin-bottom: 50px!important;
+}
+
+.hover-card {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(50%);
+  transition: all 0.5s ease;
+}
+
+.hover-card .card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.hover-card .light-text {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.hover-card .bold-text {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5px 0 0 0;
+}
+
+.hover-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05) translateY(-5px);
+}
+
+.hover-card:hover .card-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .hover-card {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hover-card .bold-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hover-card .light-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-card {
+    width: 120px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-card .bold-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-card .light-text {
+    font-size: 11px;
+  }
+}
+

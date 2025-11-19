@@ -1,0 +1,55 @@
+th, td {
+  background-color: transparent!important;
+}
+
+@media (min-width: 1200px) {
+  #rules-regulations-description th {
+    font-size: 24px!important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  #rules-regulations-description th {
+    font-size: 22px!important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  #rules-regulations-description td {
+    font-size: 18px!important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #rules-regulations-description td {
+    font-size: 20px!important;
+  }
+}
+
+#title {
+  color: #75b798!important;
+}
+
+#changelog_date {
+  color: #469bff!important;
+}
+
+#table_heading {
+  color: #ffc107!important;
+}
+
+#table_heading_changelog {
+  color: #ff1607!important;
+}
+
+#rules_thanks_section {
+  padding-bottom: 80px;
+  background: #121212;
+}
+
+@media (max-width: 576px) {
+  #rules_thanks_section {
+    font-size: 12px!important;
+  }
+}
+

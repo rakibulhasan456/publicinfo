@@ -1,0 +1,74 @@
+/* Social Media Section */
+
+.company-button-section {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.company-button-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Title */
+
+@media (max-width: 992px) {
+  .company-button-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-button-title {
+    font-size: 20px;
+  }
+}
+
+.company-button-boxes {
+  display: flex;
+  /*gap: 20px;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 4rem);
+}
+
+.company-button-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.company-button-box i {
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.company-button-box:hover {
+  color: #fff;
+}
+
+.company-button-box.discord:hover {
+  background: #1877f2;
+}
+
+.company-button-box.facebook:hover {
+  background: #1877f2;
+}
+
+.company-button-box.youtube:hover {
+  background: #ff0000;
+}
+

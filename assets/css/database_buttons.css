@@ -1,0 +1,79 @@
+/* Social Media Section */
+
+.database-button-section {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.database-button-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Title */
+
+@media (max-width: 992px) {
+  .database-button-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .database-button-title {
+    font-size: 20px;
+  }
+}
+
+.database-button-boxes {
+  display: flex;
+  /*gap: 20px;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 4rem);
+}
+
+.database-button-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.database-button-box i {
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.database-button-box:hover {
+  color: #fff;
+}
+
+.database-button-box.normal:hover {
+  background: #1877f2;
+}
+
+.database-button-box.active:hover {
+  background: #1877f2;
+}
+
+.database-button-box.youtube:hover {
+  background: #ff0000;
+}
+
+#active {
+  background: #1877f2!important;
+  color: #ffffff;
+}
+

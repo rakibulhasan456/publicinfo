@@ -9,3 +9,15 @@
   background: #1A1D20!important;
 }
 
+#public_table_td_active {
+  color: #56e100;
+}
+
+#public_table_td_closed {
+  color: #ff4b3f;
+}
+
+#public_table_td_onsale {
+  color: #ffb800;
+}
+

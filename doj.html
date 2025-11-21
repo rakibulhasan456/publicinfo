@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/business_table.css">
     <link rel="stylesheet" href="assets/css/buttons.css">
     <link rel="stylesheet" href="assets/css/company_buttons.css">
-    <link rel="stylesheet" href="assets/css/copy_restriction.css">
     <link rel="stylesheet" href="assets/css/database_buttons.css">
     <link rel="stylesheet" href="assets/css/database_table_design.css">
     <link rel="stylesheet" href="assets/css/database.css">
@@ -33,6 +32,7 @@
     <link rel="stylesheet" href="assets/css/iframe.css">
     <link rel="stylesheet" href="assets/css/join_us_button.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/public_table.css">
     <link rel="stylesheet" href="assets/css/rules.css">
     <link rel="stylesheet" href="assets/css/scroll_to_top.css">
     <link rel="stylesheet" href="assets/css/state_buttons.css">
@@ -48,7 +48,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="government.html">Government</a></li>
-                    <li class="nav-item"><a class="nav-link" href="state.html">State</a></li>
+                    <li class="nav-item"><a class="nav-link" href="city_government.html">City Government</a></li>
+                    <li class="nav-item"><a class="nav-link" href="state_government.html">State Government</a></li>
                     <li class="nav-item"><a class="nav-link" href="businesses.html">Businesses</a></li>
                     <li class="nav-item"><a class="nav-link" href="companies.html">Companies</a></li>
                     <li class="nav-item"><a class="nav-link active" href="doj.html">DOJ</a></li>
@@ -92,60 +93,35 @@
                 </tr>
             </tbody>
         </table>
-    </div><div class="table-wrapper">
-<table class="business-table">
-  <thead>
-    <tr>
-        <th>Designation</th>
-      <th>Name</th>
-      <th>CID</th>
-      <th>Phone Number</th>
-      <th>In-city Email</th>
-      <th>OOC Email User ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td>Attorny General</td>
-      <td>Gill Colson</td>
-      <td>153</td>
-      <td>489-7363</td>
-      <td>gill.colson@san-andreas.gov</td>
-      <td>484620218887438347</td>
-    </tr>
-    <!-- Repeat rows as needed -->
-      <tr>
-          <td>District Attorny</td>
-      <td>Gill Colson</td>
-      <td>153</td>
-      <td>489-7363</td>
-      <td>gill.colson@san-andreas.gov</td>
-      <td>484620218887438347</td>
-    </tr>
-      
-      <tr>
-          <td>Attorny</td>
-      <td>Gill Colson</td>
-      <td>153</td>
-      <td>489-7363</td>
-      <td>gill.colson@san-andreas.gov</td>
-      <td>484620218887438347</td>
-    </tr>
-      
-  </tbody>
-</table>
-</div>
-    <div class="table-responsive mb-3 pb-0" id="rules-regulations-description">
-        <table class="table table-striped-columns table-borderless">
+    </div>
+    <div class="table-responsive text-nowrap ms-4 me-4 mb-4" id="public_table">
+        <table class="table table-hover table-bordered">
             <thead>
-                <tr></tr>
-            </thead>
-            <tbody style="vertical-align: middle;">
                 <tr>
-                    <td class="fw-bold text-start" id="title">LEGISLATION</td>
+                    <th id="public_table_th">Designation</th>
+                    <th id="public_table_th">Name</th>
+                    <th id="public_table_th">CID</th>
+                    <th id="public_table_th">Contact</th>
+                    <th id="public_table_th">In-City Email</th>
+                    <th id="public_table_th">OOC Email User ID</th>
                 </tr>
-                <tr>
-                    <td class="text-start ps-4">The San Andreas Department of Justice Act establishes and protects the rights, powers, and responsibilities of the DOJ. It ensures the department can oversee legal matters, provide NOCs, handle cases, and collaborate with other state agencies while maintaining fairness, authority, and accountability.<br><br><strong>▸&nbsp;</strong><a href="index.html" target="_blank"><strong><em>San Andreas Department of Justice Act</em></strong></a></td>
+            </thead>
+            <tbody>
+                <tr id="public_table_td_odd">
+                    <td>Attorney General</td>
+                    <td>Mr. Lucifer</td>
+                    <td>1</td>
+                    <td>222-2222</td>
+                    <td>gill.colson@san-andreas.gov</td>
+                    <td>484620218887438347</td>
+                </tr>
+                <tr id="public_table_td_even">
+                    <td>District Attorney</td>
+                    <td>Mr. Lucifer</td>
+                    <td>1</td>
+                    <td>222-2222</td>
+                    <td>gill.colson@san-andreas.gov</td>
+                    <td>484620218887438347</td>
                 </tr>
             </tbody>
         </table>
@@ -169,7 +145,7 @@
 <section class="company-button-section">
 
   <div class="company-button-boxes">
-    <a href="https://mdt.legacyrpbd.com/public/charges" target="_blank" class="company-button-box facebook">
+    <a href="https://mdt.legacyrpbd.com/public/charges" target="_self" class="company-button-box facebook">
       <i class="fa-solid fa-gavel"></i>
       <span>San Andreas Penal Code</span>
     </a>
@@ -195,7 +171,7 @@
 <section class="company-button-section">
 
   <div class="company-button-boxes">
-    <a href="https://mdt.legacyrpbd.com/public/arrests" target="_blank" class="company-button-box facebook">
+    <a href="https://mdt.legacyrpbd.com/public/arrests" target="_self" class="company-button-box facebook">
       <i class="fa-solid fa-handcuffs"></i>
       <span>San Andreas Public Arrests</span>
     </a>
@@ -232,7 +208,6 @@
 </footer>
 </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/copy_restriction.js"></script>
     <script src="assets/js/scroll_to_top.js"></script>
     <script src="assets/js/Scroll-Animation-script.js"></script>
     <script src="assets/js/settings.js"></script>

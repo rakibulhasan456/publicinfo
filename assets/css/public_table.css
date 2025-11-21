@@ -1,0 +1,11 @@
+#public_table_th {
+  color: #ff8a00!important;
+  background: #1A1D20!important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#public_table_td_even {
+  background: #1A1D20!important;
+}
+

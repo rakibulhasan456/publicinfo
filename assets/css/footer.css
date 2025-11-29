@@ -103,3 +103,16 @@
   }
 }
 
+/* Footer Links - No Underline */
+
+.footer-copy a {
+  text-decoration: none;
+  color: #bbb;
+  font-weight: 600;
+}
+
+.footer-copy a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
